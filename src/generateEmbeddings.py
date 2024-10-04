@@ -39,7 +39,7 @@ def save_embeddings_as_json(embeddings, filename):
     with open(filepath, 'w') as f:
         json.dump(embeddings_list, f)
 
-pdf_path = "./src./assets/AltaLaudoCompleto20240719.pdf"
+pdf_path = "./assets/AltaLaudoCompleto20240719.pdf"
 page_embeddings = generate_embeddings_for_pages(pdf_path)
 
 save_embeddings_as_json(page_embeddings, 'embeddings')
